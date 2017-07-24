@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cardimage"
+        android:scaleType="centerCrop"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom|left">
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TITLE"
+                android:textStyle="bold"
+                android:textColor="#B6EFD4"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/card_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BRAND"
+                android:textStyle="italic"
+                android:textSize="19dp"
+                />
+
+            <TextView
+                android:id="@+id/card_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION
+                              DESCRIPTION
+                              DESCRIPTION"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</FrameLayout>

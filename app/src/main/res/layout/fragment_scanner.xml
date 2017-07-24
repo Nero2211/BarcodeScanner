@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/greybackground"
+    tools:context="com.example.nero.barcodescanner.Scanner">
+
+    <ImageView
+        android:id="@+id/instruction_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/barcodescanner"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruction_image"
+        android:text="Scan barcodes on products, or Data Matrix and QR Codes containing URLs, contact info, etc."
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/instruction1"
+        android:text="Please ensure the barcode is readable for the camera scanner to actually work. Hold the camera in front of the barcode for
+atleast 5 seconds for it to fully detect the barcode and direct you to the next page"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/instruction2"
+        android:text="If camera option doesn't work, you will also have the option to manually enter the barcode. Hit READY! when you are set to go."
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/scanner_instruction_readybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0C7C59"
+        android:layout_alignParentBottom="true"
+        android:text="READY!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
